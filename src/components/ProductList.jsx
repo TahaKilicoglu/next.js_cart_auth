@@ -65,7 +65,7 @@ const ProductList = () => {
             <div className="popups-container">
                 {popups.map(popup => (
                     <div key={popup.id} className="popup">
-                        "{popup.productName}" başarıyla sepete eklendi!
+                        &quot;{popup.productName}&quot; başarıyla sepete eklendi!
                     </div>
                 ))}
             </div>
