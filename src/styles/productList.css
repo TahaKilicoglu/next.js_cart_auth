@@ -1,0 +1,39 @@
+
+/* src/styles/productList.css */
+.product-list {
+    position: relative;
+}
+
+.popups-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Pop-up'lar arasındaki mesafe */
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s; /* Giriş ve çıkış animasyonu */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
