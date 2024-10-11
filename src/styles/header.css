@@ -1,0 +1,29 @@
+header {
+  background-color: #2c3e50; /* Koyu mavi arka plan rengi */
+  color: white; /* Yazı rengi beyaz */
+  display: flex;
+  justify-content: center; /* Elemanları ortala */
+  align-items: center; /* Dikey ortala */
+  padding: 30px 30px; /* Kenar boşlukları */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+  border: 2px solid #1abc9c; /* Kenar çizgisi */
+  border-radius: 8px; /* Kenarların yuvarlatılması */
+}
+
+nav {
+  display: flex;
+  gap: 80px; /* Bağlantılar arasında daha fazla boşluk */
+  align-items: center; /* Dikey ortala */
+}
+
+nav a {
+  color: white; /* Bağlantı rengi beyaz */
+  text-decoration: none; /* Alt çizgi yok */
+  font-weight: bold; /* Yazı kalın */
+  transition: color 0.3s; /* Renk değişimi için geçiş efekti */
+  font-size: 18px; /* Yazı boyutunu artır */
+}
+
+nav a:hover {
+  color: #1abc9c; /* Hover efekti ile yeşil rengi kullan */
+}

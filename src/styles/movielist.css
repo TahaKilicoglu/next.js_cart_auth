@@ -1,0 +1,112 @@
+.movie-list {
+    display: flex; /* Flexbox kullanarak yan yana dizim */
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçme */
+    justify-content: center; /* Ortada hizalama */
+    margin: 0; /* Margin temizleme */
+    padding: 0; /* Padding temizleme */
+  }
+  
+  .movie-item {
+    position: relative; /* Pozisyonlama için */
+    margin: 10px; /* Elemanlar arası boşluk */
+    width: 200px; /* Genişlik belirleme */
+    overflow: hidden; /* Taşmayı engelleme */
+    transition: transform 0.2s; /* Hover durumunda geçiş efekti */
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05); /* Hover durumunda büyütme efekti */
+  }
+  
+  .movie-poster {
+    width: 100%; /* Poster genişliği */
+    border-radius: 5px; /* Kenar yuvarlama */
+  }
+  
+  .movie-info {
+    position: absolute; /* Pozisyonlama */
+    bottom: 0; /* Alttan hizalama */
+    left: 0; /* Soldan hizalama */
+    right: 0; /* Sağdan hizalama */
+    background-color: rgba(0, 0, 0, 0.7); /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px; /* İçerik boşluğu */
+    border-radius: 0 0 5px 5px; /* Alt kenar yuvarlama */
+    transition: opacity 0.3s ease; /* Geçiş efekti ekleme */
+    opacity: 0; /* İlk başta görünmez */
+  }
+  
+  .movie-item:hover .movie-info {
+    opacity: 1; /* Hover durumunda görünür yapma */
+  }
+  
+  .movie-rating {
+    position: absolute; /* Pozisyonlama */
+    top: 10px; /* Üstten mesafe */
+    right: 10px; /* Sağdan mesafe */
+    background-color: rgba(255, 255, 255, 0.7); /* Arka plan rengi */
+    color: black; /* Yazı rengi */
+    padding: 5px; /* İçerik boşluğu */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-weight: bold; /* Yazı kalınlığı */
+    transition: opacity 0.3s ease; /* Geçiş efekti ekleme */
+    opacity: 0; /* İlk başta görünmez */
+  }
+  
+  .movie-item:hover .movie-rating {
+    opacity: 1; /* Hover durumunda görünür yapma */
+  }
+  
+  .movie-title, .add-button {
+    transition: color 0.3s; /* Hover durumunda renk geçişi */
+  }
+  
+  .movie-title:hover, .add-button:hover {
+    color: #ffffff; /* Hover durumunda renk değişimi */
+  }
+  .movie-info {
+    position: absolute; /* Pozisyonlama */
+    bottom: 0; /* Alttan hizalama */
+    left: 0; /* Soldan hizalama */
+    right: 0; /* Sağdan hizalama */
+    background-color: rgba(0, 0, 0, 0.7); /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px; /* İçerik boşluğu */
+    border-radius: 0 0 5px 5px; /* Alt kenar yuvarlama */
+    transition: opacity 0.3s ease; /* Geçiş efekti ekleme */
+    opacity: 0; /* İlk başta görünmez */
+    display: flex; /* Flexbox kullanarak içerikleri hizalama */
+    flex-direction: column; /* Dikey dizim */
+    align-items: center; /* Ortalamak için */
+    justify-content: center; /* Ortalamak için */
+  }
+  
+  .movie-title {
+    font-size: 1.2rem; /* Font boyutu */
+    margin: 0; /* Margin temizleme */
+    text-align: center; /* Ortala */
+    color: white; /* Film adı rengi beyaz */
+    transition: color 0.3s; /* Hover geçiş efekti */
+  }
+  
+  
+  .movie-item:hover .movie-title {
+    color: #ffffff; /* Hover durumunda renk değişimi */
+  }
+  
+  .add-button {
+    background-color: #007bff; /* Mavi arka plan rengi */
+    color: white; /* Beyaz yazı rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    padding: 10px 15px; /* İçerik boşluğu */
+    cursor: pointer; /* İmleç değişimi */
+    margin-top: 5px; /* Butonun üstüne boşluk */
+    transition: background-color 0.3s, transform 0.2s; /* Geçiş efekti ekleme */
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3; /* Hover durumunda koyu mavi */
+    transform: scale(1.05); /* Hover durumunda büyütme efekti */
+  }
+  

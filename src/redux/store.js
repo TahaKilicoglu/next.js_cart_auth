@@ -1,10 +1,9 @@
-// src/redux/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './cartSlice'; // Sepet diliminiz
+import watchlistReducer from './watchlistSlice'; // watchlistSlice dosyanızı içe aktarın
 
 const store = configureStore({
     reducer: {
-        cart: cartReducer,
+        watchlist: watchlistReducer, // watchlist slice'ını store'a ekleyin
     },
 });
 
